@@ -1,0 +1,47 @@
+$primary-color: #fd6a02;
+
+
+@mixin flex($justify: true){
+    display: flex;
+    align-items: center;
+    @if $justify {
+        justify-content: center;
+    }
+}
+
+// Reset
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+// Template
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 12px;
+    border-radius: 20px;
+    color: #fff;
+    background-color: $primary-color;
+    font-weight: 600;
+    cursor: pointer;
+    &:hover {
+        position: relative;
+        top: 1px;
+    }
+}

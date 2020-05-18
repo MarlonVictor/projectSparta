@@ -1,0 +1,104 @@
+#header1 {
+    height: 100px;
+    background-color: #000;
+    color: #fff;
+
+    .header { 
+        @include flex(false);
+        margin: auto;
+        max-width: 1080px;
+    
+        .logo img {
+            width: 150px;
+            padding: 3px;
+        }
+
+        .menu {
+            display: flex;
+            flex: 1;
+            justify-content: flex-end;
+            
+            .menu-opener {
+                display: none;
+                cursor: pointer;
+            }
+        
+            ul {
+                display: flex;
+                list-style: none;
+            }
+
+            a {
+                display: flex;
+                align-items: center;
+                height: 100px;
+                padding: 0 15px;
+                font-weight: 600;
+                color: #fff;
+                border-bottom: 3px solid transparent;
+            }
+
+            a:hover, li.active a {
+                color: #ccc;
+                border-bottom: 3px solid $primary-color;
+            }
+        }
+    }
+}
+
+.banner {
+    height: calc(100vh - 100px);
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    overflow: hidden;
+    .sliders {
+        width: 1000vw;
+        height: 100%;
+        .slide {
+            display: inline-block;
+            width: 100vw;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            .slide-area {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 99%;
+                text-align: center;
+                font-size: 30px;
+                font-weight: bold;
+                text-transform: uppercase;
+                color: #fff;
+            }
+        }
+    }
+    span {
+        color: $primary-color;
+    }
+    h2 {
+        margin: 30px 0;
+        font-size: 20px;
+    }
+    .slider-pointers {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        margin-top: -50px;
+        width: 100vw;
+        height: 20px;
+
+        .pointer {
+            margin: 0 5px;
+            width: 15px;
+            height: 15px;
+            border: 2px solid $primary-color;
+            border-radius: 8px;
+            cursor: pointer;
+            .active {
+                background-color: $primary-color;
+            }            
+        }
+    }
+}
