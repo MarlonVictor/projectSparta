@@ -1,0 +1,178 @@
+// Sobre
+
+.section-aboultus {
+    display: flex;
+}
+
+.section-aboultus--left {
+    flex: 1;
+
+    p {
+    line-height: 25px;
+    padding-top: 25px;
+    }
+}
+
+.section-aboultus--right {
+    width: 520px;
+    text-align: center;
+
+    img {
+    width: 480px;
+    box-shadow: 5px 5px 8px #ccc;
+    }
+}
+
+// Promoção
+
+.bg-timer, .bg-team {
+    background-image: url('../images/bg-timer.jpg');
+    background-size: 150%;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 20px;
+}
+
+.timer {
+    @include flex();
+}
+
+#timer-days, #timer-hours, #timer-minutes, #timer-seconds {
+    @include flex();
+    background-color: $primary-color;
+    margin: 5px;
+    min-width: 100px;
+    min-height: 100px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.timer-desc {
+    @include flex(false);
+
+    flex-direction: column;
+    margin-top: 20px;
+
+    span {
+        font-size: 40px;
+    }
+    p {
+        color: #ccc;
+        font-size: 12px;
+    }
+}
+
+// Cardápio
+
+.section-pizzas {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 15px;
+
+    aside {
+        background-image: url('../images/aside-pizza.jpg');
+        background-size: cover;
+    }
+    .right {
+        background-image: url('../images/right-pizza.jpg');
+        background-size: cover;
+        height: 500px;
+        color: #f7f7f7;
+        font-size: 25px;
+        font-weight: 600;
+        @include flex(false);
+
+        p {
+            margin-left: 30px;
+        }
+        a {
+            padding: 10px 30px;
+            position: relative;
+            top: 20px;
+            font-weight: bold;
+            font-size: 15px;
+            color: $primary-color;
+            background-color: #555;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 500ms;
+
+            &:hover {
+                background-color: $primary-color;
+                color: #fff;
+            }
+        }
+        span.orange {
+            color: $primary-color;
+            font-size: 30px;
+        }
+        span.big {
+            font-weight: 700;
+        }
+    }
+}
+
+// Nosso Time
+
+.bg-team {
+    background-image: url('../images/bg.jpg');
+    padding: 0;
+}
+
+.section-team-area {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 80px 0;
+}
+
+.section-team, .section-price {
+    @include flex();
+    max-width: 1080;
+}
+
+.section-team-card, .section-price-card {
+    @include flex();
+    flex-direction: column;
+    margin: 10px;
+    padding: 20px 30px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.section-team-card {
+    color: #555;
+    font-size: 14px;
+
+    h4 {
+        margin: 20px 0 10px 0;
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+    .social {
+        display: flex;
+    }
+}
+
+.social-bg {
+    @include flex();
+    margin: 25px 10px 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ccc;
+    transition: 200ms;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $primary-color;
+    }
+}
+
+.partners, .social-media {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1080px;
+    background-color: #fff;
+    padding: 40px 0;
+}
