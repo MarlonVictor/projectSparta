@@ -1,0 +1,173 @@
+// Home
+
+@media (max-width: 800px) {
+    .logo {
+        margin-left: 30px;
+    }
+    img.menu-opener {
+        display: block;
+        width: 40px;
+        margin: 30px;
+    }
+    nav {
+        display: none;
+        position: absolute;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 70vw;
+        height: calc(100vh - 100px);
+        top: 100px;
+        right: 0;
+    }
+    .menu ul {
+        flex-direction: column;
+    }
+    .menu li a {
+        font-weight: bold;
+        height: 80px;
+        font-size: 27px;
+        margin-left: 50px;
+        border: 0;
+    }
+    .menu li a:hover {
+        border: 0;
+    }
+    .menu li.active a {
+        border: 0;
+        color: $primary-color;
+    }
+    /**/
+    .section-aboultus {
+        flex-direction: column;
+    }
+    .section-aboultus--left {
+        margin: 0 30px;
+        text-align: center;
+    }
+    .section-aboultus--right {
+        margin-top: 50px;
+        width: auto;
+    }
+    /**/
+    .section-pizzas {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        gap: 5px;
+        margin: 0 30px;
+    }
+    /**/
+    .section-team-card:first-child {
+        display: none;
+    }
+    /**/
+    .section-price {
+        flex-wrap: wrap;
+    }
+    .section-price-card {
+        width: 50%;
+    }
+    /**/
+    .section-contact .button {
+        width: 200px;
+        margin: 30px auto 0;
+    }
+    /**/
+    footer {
+        grid-template-columns: 15% 42% 42%;
+    }
+    .footer-social {
+        flex-direction: column;
+        margin: 0;
+    }
+}
+
+@media (max-width: 550px) {
+    #header1 .header .logo img {
+        padding-top: 15px;
+    }
+    nav {
+        width: 100vw;
+    }
+    .banner h1 {
+        font-size: 30px;
+    }
+    .banner h2 {
+        font-size: 15px;
+    }
+    /**/
+    .section-aboultus--right {
+        margin: 50px 30px 0;
+    }
+    .section-aboultus--right img {
+        width: 100%;
+    }
+    /**/
+    .section-pizzas {
+        grid-template-columns: 100%;
+    }
+    .section-pizzas aside {
+        display: none;
+    }
+    /**/
+    .bg-timer, .bg-team {
+        background-repeat: repeat-y;
+    }
+    .timer {
+        font-size: 10px;
+    }
+    .timer-desc h1 {
+        text-align: center;
+    }
+    #timer-days, #timer-hours, #timer-minutes, #timer-seconds {
+        min-width: 50px;
+        min-height: 50px;
+        margin-left: 2px;
+        font-size: 25px;
+    }
+    /**/
+    .section-team-card:nth-child(2) {
+        display: none;
+    }
+    .partners img {
+        width: 40px;
+    }
+    /**/
+    .section-price-card {
+        width: 80%;
+    }
+    /**/
+    .social-media {
+        padding: 40px 0px;
+        position: relative;
+        right: 5px;
+    }
+    .social-media--right p {
+        display: none;
+    }
+    .section-contact form {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    /**/
+    footer.default.dark {
+        padding: 40px;
+    }
+    footer {
+        grid-template-columns: 100%;
+        grid-template-rows: 180px 150px;
+    }
+    .footer-social {
+        display: none;
+    }
+    .footer-send input, .footer-send .button {
+        width: 180px;
+        font-size: 12px;
+        position: relative;
+        right: 20px;
+    }
+    .footer-send .button {
+        right: 15px;
+    }
+}
+
+// Pizzas

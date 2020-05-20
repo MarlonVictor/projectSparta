@@ -1,0 +1,39 @@
+footer {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 20px;
+}
+
+.footer-desc {
+    color: #555;
+    text-align: justify;
+}
+
+.footer-send {
+    @include flex();
+    flex-direction: column;
+
+    input {
+        padding: 15px;
+        border: none;
+        border-bottom: 1px solid #555;
+        background-color: transparent;
+        margin: 10px;
+        outline: none;
+    
+        &:focus {
+            border-bottom: 3px solid #ccc;
+        }
+    }
+}
+
+.section-contact .button {
+    margin: 10px auto;
+    width: 60%;
+}
