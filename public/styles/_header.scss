@@ -80,25 +80,4 @@
         margin: 30px 0;
         font-size: 20px;
     }
-    .slider-pointers {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        margin-top: -50px;
-        width: 100vw;
-        height: 20px;
-
-        .pointer {
-            margin: 0 5px;
-            width: 15px;
-            height: 15px;
-            border: 2px solid $primary-color;
-            border-radius: 8px;
-            cursor: pointer;
-            .active {
-                background-color: $primary-color;
-            }            
-        }
-    }
 }
