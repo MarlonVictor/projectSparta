@@ -26,7 +26,7 @@
 // Promoção
 
 .bg-timer, .bg-team {
-    background-image: url('../images/bg-timer.jpg');
+    background-image: url('assets/images/bg-timer.jpg');
     background-size: 150%;
     background-position: center;
     background-attachment: fixed;
@@ -46,6 +46,7 @@
     min-height: 100px;
     font-size: 40px;
     font-weight: 700;
+    border-radius: 8px;
 }
 
 .timer-desc {
@@ -71,11 +72,11 @@
     gap: 15px;
 
     aside {
-        background-image: url('../images/aside-pizza.jpg');
+        background-image: url('assets/images/aside-pizza.jpg');
         background-size: cover;
     }
     .right {
-        background-image: url('../images/right-pizza.jpg');
+        background-image: url('assets/images/right-pizza.jpg');
         background-size: cover;
         height: 500px;
         color: #f7f7f7;
@@ -117,7 +118,7 @@
 // Nosso Time
 
 .bg-team {
-    background-image: url('../images/bg.jpg');
+    background-image: url('assets/images/bg.jpg');
     padding: 0;
 }
 
@@ -201,10 +202,15 @@
     padding: 10px 0;
 }
 
+.section-price-card .one {
+    padding: 35px;
+    font-size: 18.2px;
+}
+
 // Social
 
 .social-media {
-    max-width: 900px;
+    max-width: 960px;
 
     h3, p {
         color: #555;

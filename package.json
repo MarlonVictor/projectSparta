@@ -1,0 +1,25 @@
+{
+  "name": "projectSparta",
+  "version": "2.0.0",
+  "description": "Aplicação web construída utilizando os conhecimentos adquiridos no curso b7Web do Programador Espartano",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarlonVictor/projectSparta.git"
+  },
+  "keywords": [],
+  "author": "Marlon Victor",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MarlonVictor/projectSparta/issues"
+  },
+  "homepage": "https://github.com/MarlonVictor/projectSparta#readme",
+  "devDependencies": {
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-uglify-es": "^2.0.0"
+  },
+  "dependencies": {
+    "gulp": "^4.0.2"
+  }
+}

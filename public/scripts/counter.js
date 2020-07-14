@@ -1,13 +1,13 @@
 function iniciarContador(m_init) {
-    var t_horas = document.querySelector('#timer-hours');
-    var t_minutos = document.querySelector('#timer-minutes');
-    var t_segundos = document.querySelector('#timer-seconds');
+    const t_horas = document.querySelector('#timer-hours');
+    const t_minutos = document.querySelector('#timer-minutes');
+    const t_segundos = document.querySelector('#timer-seconds');
 
-    var h = m_init -1;
-    var m = 59;
-    var s = 59;
+    let h = m_init -1;
+    let m = 59;
+    let s = 59;
 
-    var contador = setInterval(function(){
+    const contador = setInterval(function(){
         t_horas.innerHTML = (h > 9) ? ('' + h) : ('0' + h);
         t_minutos.innerHTML = (m > 9) ? ('' + m) : ('0' + m);
         t_segundos.innerHTML = (s > 9) ? ('' + s) : ('0' + s);  

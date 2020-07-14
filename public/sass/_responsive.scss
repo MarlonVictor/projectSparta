@@ -2,7 +2,8 @@
 
 @media (max-width: 800px) {
     .logo {
-        margin-left: 30px;
+        position: relative;
+        bottom: 10px;
     }
     img.menu-opener {
         display: block;
@@ -155,6 +156,10 @@
     footer {
         grid-template-columns: 100%;
         grid-template-rows: 180px 150px;
+
+        p {
+            font-size: 14px;
+        }
     }
     .footer-social {
         display: none;

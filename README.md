@@ -1,24 +1,38 @@
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/62356988/82700366-70a82b80-9c44-11ea-96b8-ee7e8538b163.png">
+  <img src="https://user-images.githubusercontent.com/62356988/86295321-b1dd1500-bbcc-11ea-9d06-7108c3f0c9fb.png" width="200px">
 </p>
 
 ___
-## Projeto:
-* Projeto feito apenas para estudos e conhecimento em HTML, CSS e JavaScript. Feito através do curso da b7Web.  
-* Trata-se de um site responsivo de uma pizzaria com um sistema de carrinho funcional.
+## Sobre
+Projeto feito apenas para estudos, utilizando conhecimento em HTML, CSS/SASS e JavaScript.  
+Trata-se de um site de uma pizzaria fictícia com um sistema de carrinho funcional.  
+Sistema de carrinho construído com base nos estudos do curso de JavaScrit da B7Web.  
 
-## Ferramentas utilizadas:
-
+## Tecnologias Utilizadas
 * HTML5
 * CSS3
-* JavaScript Vanilla
 * SASS
+* JavaScript
+* Gulp
 
-## Links:
-* Link do projeto: https://marlonvictor.github.io/projectSparta/index.html
-* Link do curso: https://alunos.b7web.com.br/curso/html5-e-css3 --- https://alunos.b7web.com.br/curso/javascript
+## Resultado
+### Cardápio:
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/62356988/87453999-c3b1b580-c5d9-11ea-8f4b-0ddc3ef44a5a.gif" width="800px">
+</p>
+
+## Acesse
+* Link do projeto: [Pizza Master](https://marlonvictor.github.io/projectSparta/src/views/index.html)  
+
+
+## Como usar
+* Clonar esse repositório. 
+* Ter o LiveServer instalado (plugin do seu editor de código)
+
+## Licença
+Este projeto está sob a licença MIT. Consulte a [LICENÇA](https://github.com/MarlonVictor/projectSparta/blob/master/LICENSE) para obter detalhes.
 
 ___
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/62356988/82700961-9bdf4a80-9c45-11ea-9e70-78a342bd4870.gif">
+  Feito com <img src="https://github.githubassets.com/images/icons/emoji/unicode/1f49c.png" width="20px"> by Marlon Victor
 </p>
